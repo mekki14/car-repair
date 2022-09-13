@@ -6,31 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link href="iconFont.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="Script.js"></script>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="/Car repair template/Style.css">
+    <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Titillium+Web&display=swap" rel="stylesheet">
+
+-->
 </head>
 
 <body>
     <div class="parent">
-        <div class="container">
-
-
+        <div class="containe">
+            
+            
             <!-- navbar  -->
-            <header>
-                <div class="header-container">
-                    <img class="logo" src="/Car repair template/images/logoof template.png" alt="">
+            <header class="container">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="header-container ">
+                <img class="logo" src="/images/logoof template.png" alt="">
                     <nav>
-                        <ul>
-                            <li> <a href="index.html">Home</a> </li>
-                            <li> <a href="Services.html">Services</a></li>
-                            <li> <a href="About.html">About us</a> </li>
-                            <li id="bookbuttonhead"> <a href="booknow.html">Book now</a> </li>
+                        <ul  class="navigation">
+                            <li> <a href="index.html ">Home</a> </li>
+                            <li> <a href="Services.html ">Services</a></li>
+                            <li> <a href="About.html ">About us</a> </li>
+                            <li id="bookbuttonhead"> <a href="booknow.html ">Book now</a> </li>
                         </ul>
                     </nav>
                 </div>
@@ -40,12 +47,15 @@
 
             <!-- section 01 head section -->
 
-            <section class="sec01">
+            <section class="sec01 container">
                 <div class="hero">
-                    <h2 class="call-to-action-head-text">The fastest car repair in the zone</h2>
-                    <p class="call-to-action-text">The best place to find car repair let's get started hello workd to next hello. </p>
-                    <button class="call-to-action-button">Book an apointment</button>
-                    <p id="learn-more">learn more</p>
+                    <h2>The fastest car repair in the zone</h2>
+                    <p>The best place to find car repair let's get started hello workd to next hello. </p>
+                  <div class="buttons">
+
+                      <a href="booknow.html" class="call-to-action-button ">Book an apointment</a>
+                      <p class="learn-more ">learn more <span><i class="fa-solid fa-angles-right"></i></span></p>
+                    </div>
                 </div>
 
             </section>
@@ -54,14 +64,19 @@
 
 
             <!-- section 02 about section -->
-            <section class="sec02">
-                <img class="img-about" src="/Car repair template/images/tekton-O_ufcLVTAYw-unsplash.jpg" alt="">
-                <div class="about-text">
-                    <h2 class="sec02-head-text">About us</h2>
-                    <p class="sec02-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempore eius non culpa, esse asperiores vero odit error ab </p>
-                    <a href="About.html" class="read-more">  Read more <img src="images/icon readmore.svg" alt=""></a>
+            <section class=" sec02 container">
+                <div class="about-content">
+                    
+                    <div class="img-about">
+                        <img src="/images/tekton-O_ufcLVTAYw-unsplash.jpg " alt=" ">
+                    </div>
+                    <div class="about-text">
+                        <h2 class="title01">About us</h2>
+                        <p class="sec02-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolores, facere odit fugiat deleniti reiciendis? Porro a temporibus eaque exercitationem saepe explicabo hic iste beatae neque. Harum commodi dolor impedit?</p>
+                        <a href="About.html " class="read-more"> Read more <span><i class="fa-solid fa-angles-right"></i></span></a>
+                    </div>
+                    
                 </div>
-
             </section>
 
             <!-- end section 02 -->
@@ -72,57 +87,61 @@
 
 
             <!-- section 03: our service section -->
-            <h2 class="title-services">Services</h2>
-            <section class="sec03">
+            <section class="container">
+                <h2 class="title">Services</h2>
+<div class="services-part">
 
-                <div class="service-div">
-                    <img src="images/oil-drum.png" alt="">
-                    <h4>oil filter</h4>
+    <div class="service-div ">
+        <span class="icon"> <i class="fa-solid fa-oil-can"></i></span>
+                    <h2>oil filter</h2>
                     <p>Lorem ipsum dolor sit ad nam ex, officia nisi vitae, rem sint omnis totam sunt molestias, repudiandae facilis distinctio illo! Distinctio quos ?</p>
-                    <a class="read-more" href="Service01.html"> Read more <img src="images/icon readmore.svg" alt=""></a>
+                    <a class="read-more " href="Service01.html "> Read more <span><i class="fa-solid fa-angles-right"></i></span></a>
                 </div>
 
 
-                <div class="service-div">
-                    <img src="images/windshield.png" alt="">
-                    <h4>Wiper blades replacement</h4>
+                <div class="service-div invert">
+                    <span class="icon"> <i class="fa-solid fa-oil-can"></i></span>
+                    <h2>Wiper blades replacement</h2>
                     <p>Lorem ipsum dolor sit ad nam ex, officia nisi vitae, rem sint omnis totam sunt molestias, repudiandae facilis distinctio illo! Distinctio quos ?</p>
-                    <a class="read-more" href="Service02.html"> Read more <img src="images/icon readmore.svg" alt=""></a>
+                    <a class="read-more " href="Service02.html "> Read more <span><i class="fa-solid fa-angles-right"></i></span></a>
                 </div>
 
 
-                <div class="service-div">
-                    <img src="images/air-filter.png" alt="">
-                    <h4>replace air filter</h4>
+                <div class="service-div ">
+                    <span class="icon"> <i class="fa-solid fa-oil-can"></i></span>
+                    <h2>replace air filter</h2>
                     <p>Lorem ipsum dolor sit ad nam ex, officia nisi vitae, rem sint omnis totam sunt molestias, repudiandae facilis distinctio illo! Distinctio quos ?</p>
-                    <a class="read-more" href="Service03.html"> Read more <img src="images/icon readmore.svg" alt=""></a>
+                    <a class="read-more " href="Service03.html "> Read more <span><i class="fa-solid fa-angles-right"></i></span></a>
                 </div>
 
 
-                <div class="service-div">
-                    <img src="images/calendar.png" alt="">
-                    <h4>Scheduled maintenance</h4>
+                <div class="service-div invert">
+                    <span class="icon"> <i class="fa-solid fa-oil-can"></i></span>
+                    
+                    <h2>Scheduled maintenance</h2>
                     <p>Lorem ipsum dolor sit ad nam ex, officia nisi vitae, rem sint omnis totam sunt molestias, repudiandae facilis distinctio illo! Distinctio quos ?</p>
-                    <a class="read-more" href="Service04.html"> Read more <img src="images/icon readmore.svg" alt=""></a>
+                    <a class="read-more " href="Service04.html "> Read more <span><i class="fa-solid fa-angles-right"></i></span></a>
                 </div>
 
 
-                <div class="service-div">
-                    <img src="images/car-battery.png" alt="">
-                    <h4>battery replacement</h4>
+                <div class="service-div ">
+                    <span class="icon"> <i class="fa-solid fa-oil-can"></i></span>
+                    <h2>battery replacement</h2>
                     <p>Lorem ipsum dolor sit ad nam ex, officia nisi vitae, rem sint omnis totam sunt molestias, repudiandae facilis distinctio illo! Distinctio quos ?</p>
-                    <a class="read-more" href="Service05.html">Read more <img src="images/icon readmore.svg" alt=""></a>
+                    <a class="read-more " href="Service05.html ">Read more <span><i class="fa-solid fa-angles-right"></i></span></a>
                 </div>
 
 
 
-                <div class="service-div">
-                    <img src="images/racing.png" alt="">
-                    <h4>Wheels aligned/balanced</h4>
+                <div class="service-div invert">
+                    <span class="icon"> <i class="fa-solid fa-oil-can"></i></span>
+                    
+                    <h2>Wheels aligned/balanced</h2>
                     <p>Lorem ipsum dolor sit ad nam ex, officia nisi vitae, rem sint omnis totam sunt molestias, repudiandae facilis distinctio illo! Distinctio quos ?</p>
-                    <a class="read-more" href="Service06.html"> Read more <img src="images/icon readmore.svg" alt=""></a>
+                    <a class="read-more " href="Service06.html "> Read more <span><i class="fa-solid fa-angles-right"></i></span></a>
                 </div>
-
+                
+            </div>
             </section>
 
             <!-- /section 03: our service section -->
@@ -132,27 +151,29 @@
 
             <!-- section 04: Why our service section -->
 
-            <section id="sec04">
-                <h2 class="title-feature">feature</h2>
-                <div class="container">
-                    <div class="properties">
-                        <img src="images/support (1).png" alt="">
+            <section class="sec04 container">
+                <h2 class="title">feature</h2>
+                <div class="content">
+                    <div class="properties ">
+                        <i class=" icon fa-solid fa-message"></i>
                         <h3>Custamer support</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam in exercitationem veritatis adipisci assumenda, repellendus perspiciatis debitis laboriosam, error quisquam aliquam </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  </p>
                     </div>
 
 
-                    <div class="properties">
-                        <img src="images/work.png" alt="">
+                    <div class="properties ">
+                        <i class="icon">
+                            <i class="fa-solid fa-1"></i> 
+                            <i class="fa-solid fa-0"></i>                       </i>
                         <h3>Years experince</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam in exercitationem veritatis adipisci assumenda, repellendus perspiciatis debitis laboriosam, error quisquam aliquam </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  </p>
                     </div>
 
 
-                    <div class="properties">
-                        <img src="images/best-price (1).png" alt="">
+                    <div class="properties ">
+                        <i class=" icon fa-solid fa-money-bill"></i>
                         <h3>Best prices</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam in exercitationem veritatis adipisci assumenda, repellendus perspiciatis debitis laboriosam, error quisquam aliquam </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  </p>
                     </div>
                 </div>
 
@@ -165,20 +186,25 @@
 
             <!-- section 05: testimonial section -->
 
-            <section id="sec05">
-                <div class="location">
-                    <h3>location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5662660.968519456!2d6.538635705300186!3d46.131404038631764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2sdz!4v1650405513087!5m2!1sar!2sdz" width="600" height="450" style="border:0;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <section class="sec05 container">
 
+                <div class="content12">
+                    
+                    <div class="location">
+                        <h3>location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5662660.968519456!2d6.538635705300186!3d46.131404038631764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2sdz!4v1650405513087!5m2!1sar!2sdz " width="600
+                                    " height="350 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+                
+                    </div>
 
                 <div class="workbook">
                     <h3>Book now</h3>
                     <p>working time 7/7 days 24/24.<br> hours Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, recusandae sequi quibusdam tempore dolore quidem corrupti eius nobis et, fugiat quas consequuntur voluptatem
                     </p>
-                    <a class="bookbutton05" href="booknow.html">booknow</a>
+                    <a class="bookbutton05 " href="booknow.html ">book now</a>
                 </div>
+            
+                    </div>
             </section>
 
             <!-- /section 05: testimonial section -->
@@ -188,41 +214,41 @@
 
 
             <!-- section 06: footer -->
-            <footer>
+            <footer  class="container" >
+<div class="footer">
 
                 <div class="footer-div">
-                    <h3>Super car repair</h3>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iusto repudiandae pariatur odit, corporis temporibus accusantium aliquam tenetur molestias voluptatum quidem
-                    </p>
+                <h3>Super car repair</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iusto repudiandae pariatur odit, corporis temporibus accusantium aliquam tenetur molestias voluptatum quidem</p>
                 </div>
 
-                <div class="footer-div">
+                <div class="footer-div ">
                     <h3>Contact info</h3>
-                    <div class="elem"><img src="images/phone icon.svg" alt="">
+                    <div class="elem ">
                         <p>0646489148944</p>
                     </div>
-                    <div class="elem"> <img class="mph" src="images/icons8-mail-50.png" alt="">
-                        <p>yourname@email.com</p>
+                    <div class="elem "> 
+                        <p> yourname@email.com</p>
                     </div>
-                    <div class="elem"> <img class="mph" src="images/location.png" alt="">
+                    <div class="elem ">
                         <p>location 45 country ge city fa street 4450</p>
                     </div>
                 </div>
 
                 <div class="footer-div">
-                    <h3>Social media Network</h3>
-                    <div class="elem"> <img src="images/facebook icon.svg" alt="">
+                    <h3>Social media Network</h3>                    
+                    <div class="elem">
                         <p>facebook</p>
                     </div>
-                    <div class="elem"> <img src="images/twitter icon.svg" alt="">
+                    <div class="elem"> 
                         <p>twitter</p>
                     </div>
-                    <div class="elem"> <img src="images/instagram icon.svg" alt="">
+                    <div class="elem">
                         <p>instagram</p>
                     </div>
-
+                    
                 </div>
+            </div>
                 <div class="copyright">
                     <p>all copyright reserved 2022 </p>
                 </div>
